@@ -9,6 +9,10 @@ client.on('ready', () => {
 
 client.on('message', message => {
   if (message.author.bot) return;
+  
+  if(message.content.ToLowerCase() == 'dope'){
+      message.channel.send('gaming');
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
