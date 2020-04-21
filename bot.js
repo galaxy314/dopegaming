@@ -1,18 +1,22 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+ 
+
 client.on('ready', () => {
-    client.user.setPresence({ game: { name: 'Dope Gaming', type: 2}, status: 'online'}).then(console.log).catch(console.error);
-    client.user.setStatus('online').then(console.log).catch(console.error);
     console.log('I am ready!');
 });
 
+ 
+
 client.on('message', message => {
-  if (message.author.bot) return;
-  
-  if(message.content.ToLowerCase() == 'dope'){
-      message.channel.send('gaming');
-  }
+    if (message.content === 'ping') {
+       message.reply('pong');
+    }
 });
 
-client.login(process.env.BOT_TOKEN);
+ 
+
+// THIS  MUST  BE  THIS  WAY
+
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
