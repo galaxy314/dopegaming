@@ -1,8 +1,8 @@
 {
 
-  "name": "Dope Bot",
+  "name": "Dope Gaming bot",
 
-  "description": "The official dope gaming discord bot",
+  "description": "The official Dope Gaming Discord bot",
 
   "version": "0.0.1",
 
@@ -16,7 +16,7 @@
 
   "dependencies": {
 
-    "discord.js": "11.1.0",
+    "discord.js": "12.0.0",
 
     "request": "2.81.0"
 
